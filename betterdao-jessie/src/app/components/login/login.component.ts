@@ -35,6 +35,11 @@ export class LoginComponent {
       (response) => {
         if (response.length > 0 && response[0].password === password) {
           sessionStorage.setItem('email', email as string);
+          this.messageService.add({
+            severity: 'success',
+            summary: 'Login Successful',
+            detail: 'You have successfully logged in!',
+          });
           this.router.navigate(['landing']); // logged in --> redirect to specific USER PAGE
         } else {
           this.messageService.add({
