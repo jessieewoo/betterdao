@@ -1,0 +1,18 @@
+.field {
+  margin-bottom: 1em;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mt-2 {
+  margin-top: 0.5em;
+}
+
+.button {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  margin-top: 1em; /* Add some space above the button if needed */
+}
